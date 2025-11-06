@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": ".", 
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["*"]    // أي import يبدأ بـ @/ يشير لأي ملف أو فولدر في root
+      "@/*": ["components/*"],    // مسار كل المكونات
+      "@lib/*": ["lib/*"],        // مسار مكتبات المساعدة
+      "@app/*": ["app/*"]         // مسار app
     }
   },
-  "include": ["."]
+  "include": ["app/**/*", "components/**/*", "lib/**/*", "pages/**/*"]
 }

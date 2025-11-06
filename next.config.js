@@ -2,35 +2,29 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  
+
   // تحسين الأداء
   compress: true,
-  
+
   // إعدادات الصور
   images: {
-    domains: [],
+    domains: [], // لو عندك دومينات خارجية للصور حطها هنا
   },
-  
+
   // إعدادات i18n للعربية
   i18n: {
     locales: ['ar'],
     defaultLocale: 'ar',
   },
-  
+
   // Headers للأمان والأداء
   async headers() {
     return [
       {
         source: '/:path*',
         headers: [
-          {
-            key: 'X-DNS-Prefetch-Control',
-            value: 'on'
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN'
-          },
+          { key: 'X-DNS-Prefetch-Control', value: 'on' },
+          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
         ],
       },
     ];
