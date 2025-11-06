@@ -9,7 +9,7 @@ const cairo = Cairo({
 });
 
 export const metadata = {
-  title: 'Smart Medical Content Creator | مولد محتوى طبي احترافي',
+  title: 'Smart Medical Content Creator',
   description: 'أداة ذكية لتوليد محتوى احترافي لأطباء الأسنان على السوشيال ميديا في دقيقة واحدة',
   keywords: 'محتوى طبي, طب الأسنان, سوشيال ميديا, أطباء الأسنان, محتوى احترافي',
   authors: [{ name: 'Smart Medical Content Creator' }],

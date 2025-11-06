@@ -2,21 +2,18 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-
+  
   // تحسين الأداء
   compress: true,
-
+  
   // إعدادات الصور
   images: {
-    domains: [], // لو عندك دومينات خارجية للصور حطها هنا
+    domains: [],
   },
-
-  // إعدادات i18n للعربية
-  i18n: {
-    locales: ['ar'],
-    defaultLocale: 'ar',
-  },
-
+  
+  // ⚠️ حذفنا i18n لأنها بتسبب مشاكل مع Vercel
+  // يمكنك التعامل مع العربية من خلال layout.js بدلاً منها
+  
   // Headers للأمان والأداء
   async headers() {
     return [
