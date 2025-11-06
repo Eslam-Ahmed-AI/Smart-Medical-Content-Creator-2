@@ -2,10 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["components/*"],    // مسار كل المكونات
-      "@lib/*": ["lib/*"],        // مسار مكتبات المساعدة
-      "@app/*": ["app/*"]         // مسار app
+      "@/*": ["./*"]
     }
   },
-  "include": ["app/**/*", "components/**/*", "lib/**/*", "pages/**/*"]
+  "exclude": ["node_modules", ".next"]
 }
