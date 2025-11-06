@@ -873,7 +873,7 @@ Slide 2: [المحتوى]
           </div>
           
           <div className="flex items-center justify-center gap-6 text-sm text-gray-400 mb-4">
-            <span>© 2024 Smart Medical Content Creator</span>
+            <span>© 2026 Smart Medical Content Creator</span>
           </div>
         </div>
       </div>
